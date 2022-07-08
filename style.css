@@ -1,0 +1,651 @@
+@import 'variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--fonteBrancaPadrao);
+    font-family: "Lato", sans-serif;
+}
+
+.main {
+    width: 100%;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*** HEADER ***/
+
+.header .top {
+    background-color: var(--corTemplateAzulEscuro);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    line-height: 14px;
+}
+
+.header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+
+
+.header nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.header nav ul li {
+    margin: 0 30px 0px 0px;
+}
+
+.header .top .right .btnEmprestimo {
+    background-color: var(--corBotaoAmarelo);
+    padding: 15px 30px;
+}
+
+.header .bottom {
+    background-color: var(--corTemplateAzulClaro);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-style: normal;
+}
+
+.header .bottom .content {
+    padding: 8.6px 15px;
+}
+
+.header .bottom .right {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0;
+}
+
+.header .bottom .right .btnAcessar{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 80px;
+}
+
+.header .bottom .right .btnOqueProcura{
+    margin-left: 15px;
+}
+
+/*** SECTION MAIN ***/
+.sectionMain {
+    width: 100%;
+}
+
+.sectionMain .img {
+    position: relative;
+    width: 100%;
+    height: 680px;
+}
+
+.sectionMain .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.sectionMain .img button {
+    position: absolute;
+    bottom: 10%;
+    left: 21%;
+    background-color: var(--corBotaoAmarelo);
+    padding: 15px 60px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.sectionMain .msg {
+    background-color: var(--corBotaoAmarelo);
+    padding: 16.1px 18px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/*** SECTION PRODUCTS ***/
+.sectionProducts .top {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(245,245,245,1) 50%);
+    padding: 80px 0;
+}
+
+.sectionProducts .top .title h4 {
+    color: #888888;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sectionProducts .top .title h1 {
+    width: 50%;
+    font-size: 60px;
+    color: #23B9E2;
+    font-weight: 300;
+    line-height: 60px;
+}
+
+.sectionProducts .top .cards {
+    display: flex;
+    margin-top: 50px;
+}
+
+.sectionProducts .top .cards .card {
+    max-width: 22%;
+    margin: 0 10px;
+}
+
+.sectionProducts .top .cards .card #img1 {
+    background-image: url('/images/CaraMeninaNoPC.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 7px;
+}
+
+.sectionProducts .top .cards .card #img2 {
+    background-image: url('/images/MeninaDeOculos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 7px;
+}
+
+.sectionProducts .top .cards .card #img3 {
+    background-image: url('/images/MeninaRica.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 7px;
+}
+
+.sectionProducts .top .cards .card #img4 {
+    background-image: url('/images/MeninaRindoProCelular.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 7px;
+}
+
+.sectionProducts .top .cards .card h3 {
+    font-size: 2rem;
+    color: var(--corTemplateAzulClaro);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.sectionProducts .top .cards .card p {
+    color: black;
+}
+
+.sectionProducts .top .cards .card button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    padding: 15px 0;
+    background-color: var(--corBotaoAmarelo);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/*** SECTION ADDRESS ***/
+.sectionAddress .main {
+    background-color: #F5F5F5;
+    color: black;
+    padding: 80px 0;
+}
+
+.sectionAddress .main .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionAddress .main .content .left {
+    width: 50%;
+}
+
+.sectionAddress .main .content .left h1 {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 60px;
+    margin: 20px 0;
+    color: #23B9E2;
+}
+
+.sectionAddress .main .content .left h3 {
+    width: 50%;
+    font-size: 17px;
+    line-height: 34px;
+    font-weight: 400 bold;
+    color: black;
+}
+
+.sectionAddress .main .content .left h4 {
+    width: 50%;
+    color: gray;
+}
+
+.sectionAddress .main .content .right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionAddress .main .content .right input {
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgb(215, 212, 212);
+    border-radius: 2px;
+    padding: 20px 10px;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.sectionAddress .main .content .right .local {
+    margin: 15px 0;
+}
+
+.sectionAddress .main .content .right .local i {
+    color: rgb(246, 9, 9)
+}
+
+.sectionAddress .main .content .right .local a {
+    text-decoration:underline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    margin-right: 2px;
+    color: black;
+}
+
+.sectionAddress .main .content .right .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionAddress .main .content .right .buttons button {
+    width: 48%;
+    padding: 15px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+.sectionAddress .main .content .right .buttons button:nth-child(1) {
+    background-color: white;
+    font-size: 11px;
+    color: black;
+    line-height: 17px;
+}
+
+.sectionAddress .main .content .right .buttons button:nth-child(2) {
+    background-color: var(--corBotaoAmarelo);
+    color: white;
+    border: none;
+}
+
+/*** SECTION AGENDA ***/
+.sectionAgenda .content {
+    background-color: #007BFF;
+    display: flex;
+}
+
+.sectionAgenda .content .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.sectionAgenda .content .msg {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.sectionAgenda .content .msg h4 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400 bold;
+}
+
+.sectionAgenda .content .msg h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.sectionAgenda .content .msg h3 {
+    width: 60%;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400 bold;
+}
+
+.sectionAgenda .content .form {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionAgenda .form .name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionAgenda .form .name input {
+    width: 48%;
+    padding: 10px;
+    border: none;
+}
+
+.sectionAgenda .form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border: none;
+}
+
+.sectionAgenda .form button {
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 1px solid white;
+    background-color: #007BFF;
+}
+
+
+/*** SECTION EXPERIENCE ***/
+.sectionExperience .main {
+    background-color:#F5F5F5;
+}
+
+.sectionExperience .content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.sectionExperience .content .info {
+    width: 30%;
+}
+
+.sectionExperience .content .info h4 {
+    color: black;
+}
+
+.sectionExperience .content .info h2 {
+    color: #23B9E2;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 30px 0;
+}
+
+.sectionExperience .content .info p {
+    color: black;
+    line-height: 30px;
+}
+
+.sectionExperience .content .logos {
+    display: flex;
+}
+
+.sectionExperience .content .logos .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionExperience .content .logos .logo span {
+    width: 50%;
+    margin-top: 15px;
+    text-align: center;
+    display: block;
+    font-size: 0.9rem;
+    color: #23B9E2;
+}
+
+.sectionExperience .content .img {
+    display: flex;
+    justify-content: end;
+}
+
+/*** SECTION SOCIAL ***/
+.sectionSocial .main {
+    background-color: #007BFF;
+}
+
+.sectionSocial .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionSocial .content .images .img:nth-child(1) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.sectionSocial .content .images .img:nth-child(1) img:nth-child(1) {
+    width: 260px;
+    height: 192px;
+}
+
+.sectionSocial .content .images .img:nth-child(1) img:nth-child(2) {
+    width: 260px;
+    height: 280px;
+}
+
+.sectionSocial .content .images .img:nth-child(2) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.sectionSocial .content .images .img:nth-child(2) img:nth-child(1) {
+    width: 260px;
+    height: 280px;
+}
+
+.sectionSocial .content .images .img:nth-child(2) img:nth-child(2) {
+    width: 260px;
+    height: 192px;
+}
+
+.sectionSocial .content .images img {
+    width: 250px;
+    height: 80%;
+    margin-right: 20px;
+}
+
+.sectionSocial .content .images .img {
+    width: 260px;
+    margin-right: 20px;
+}
+
+.sectionSocial .content .social {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionSocial .content .social h1 {
+    width: 90%;
+    font-size: 3.5rem;
+    margin: 20px 0;
+}
+
+.sectionSocial .content .social .icons i {
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 5px;
+}
+
+
+/*** FOOTER ***/
+/*** SECTION CONTACT ***/
+.sectionContact .main {
+    background-color: #ffff;
+    padding: 50px 0;
+}
+
+.sectionContact .content .columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionContact .content .columns .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionContact .content .columns .column h3 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.sectionContact .content .columns .column p {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.sectionContact .content .columns .column a {
+    color: gray;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+}
+
+.sectionContact .content .columns .column .contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13px;
+}
+
+.sectionContact .content .columns .column .contact p {
+    margin-bottom: 5px;
+}
+
+.sectionContact .content .columns .column .contact a {
+    color: #23B9E2;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+    margin: 0;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: #DEE2E6;
+}
+
+/*** SECTION FINANCE ***/
+.sectionFinance .main {
+    padding: 50px 0;
+}
+
+.sectionFinance .content .finances {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionFinance .content .finances .finance {
+    margin-right: 25px;
+}
+
+.sectionFinance .content .finances .finance h4 {
+    color: #23B9E2;
+    font-size: 0.9rem;
+}
+
+.sectionFinance .content .finances .finance span {
+    display: block;
+    color: gray;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 0.7rem;
+}
+
+.sectionFinance .content .finances .finance span:nth-child(3) {
+    font-size: 13px;
+}
+
+.sectionFinance .content .finances div:nth-child(3) {
+    width: 25%;
+    display: flex;
+    align-items: flex-end;
+    color: black;
+}
+
+.sectionFinance .content .finances div:nth-child(3) span {
+    font-size: .9rem;
+}
+
+.sectionFinance .content .finances div:nth-child(3) a {
+    color: #23B9E2;
+    text-decoration: underline;
+}
+
+/*** SECTION END ***/
+.sectionEnd .main {
+    background-color: #23B9E2;
+    padding: 13px 0;
+}
+
+.sectionEnd .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionEnd .content .info span {
+    margin-right: 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
